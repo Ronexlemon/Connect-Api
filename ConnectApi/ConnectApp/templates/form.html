@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+</head>
+<body>
+<Form action="addproduct/" method="post">
+    {% csrf_token %}
+    <label  name="product">Product Name</label>
+    <br>
+    <input type="text" name="Name" placeholder="Mango">
+    <br>
+     <label  name="description">Product Description</label>
+    <br>
+    <input type="text" name="Description" placeholder="one of its kind">
+    <br>
+     <label  name="image">Product Url</label><br>
+    <br>
+    <input type="text" name="Url" placeholder="https://image/...">
+    <br>
+     <label  name="product">Product Price</label><br>
+    <br>
+    <input type="text" name="Price" placeholder="250"><br>
+    <br>
+    <input type="submit" name="submit" >
+
+
+</Form>
+
+</body>
+</html>
